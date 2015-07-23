@@ -1,16 +1,23 @@
-<!DOCTYPE html>
-       <html lang="en">
-       <head>
-       <meta charset="utf-8">
-       <meta http-equiv="X-UA-Compatible" content="IE=edge">
-       <meta name="viewport" content="width=device-width, initial-scale=1">
-       <title>Learning Clojure</title>
-       <link href="//netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap.min.css" rel="stylesheet">
-       </head>
-       <body>
-       <div class="container">
-       <h1>Learning Clojure</h1><p>Hi and welcome to this ongoing series about me learning howto Clojure.</p><p>I plan to document my process, so that you may benefit from my experiences.</p><p>Since I by myself are already a programmer and quite confident in writing serious and effective Java code, this blog will be probably be most helpful, if you are already a programmer. (But you may of course feel free to read my blog regardless of your profession)</p><p>My approach to learning a new programming language is by example: So hopefully in the near future there will be some interesting code available on my github page. In the next few posts, we will try produce a somewhat useable static blog engine. (So if you are reading this, its code must already be available for you to explore)</p><p>So the <a href="Why%20Clojure.html">next post</a> I will explain why I chose to learn Clojure, and not any other language.</p><p>Stay tuned</p><p>- H4ssi</p></div>
-       <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
-       <script src="//netdna.bootstrapcdn.com/bootstrap/3.1.1/js/bootstrap.min.js"></script>
-       </body>
-       </html>
+---
+layout: default
+---
+
+<div class="home">
+
+  <h1 class="page-heading">Posts</h1>
+
+  <ul class="post-list">
+    {% for post in site.posts %}
+      <li>
+        <span class="post-meta">{{ post.date | date: "%b %-d, %Y" }}</span>
+
+        <h2>
+          <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
+        </h2>
+      </li>
+    {% endfor %}
+  </ul>
+
+  <p class="rss-subscribe">subscribe <a href="{{ "/feed.xml" | prepend: site.baseurl }}">via RSS</a></p>
+
+</div>

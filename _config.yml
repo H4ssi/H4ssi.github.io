@@ -1,0 +1,16 @@
+# Site settings
+title: cat /dev/random | H4ssi | grep blog
+email: florian.hassanen@gmail.com
+description: > # this means to ignore newlines until "baseurl:"
+  A developer blog seeded by random noise within H4ssi's brain. Most likely still random and noisy. ¯\_(ツ)_/¯
+baseurl: "" # the subpath of your site, e.g. /blog/
+url: "https://H4ssi.github.io" # the base hostname & protocol for your site
+twitter_username: H4ssi
+github_username:  H4ssi
+gems:
+- jemoji
+exclude:
+- vendor
+
+# Build settings
+markdown: kramdown
