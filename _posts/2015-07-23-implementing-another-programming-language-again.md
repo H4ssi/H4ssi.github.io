@@ -2,7 +2,7 @@
 layout: post
 title:  "Implementing another&trade; programming language... again&trade;..."
 date:   2015-07-23 20:24:07
-categories: jekyll update
+categories: programming warmup
 ---
 
 Finally this blog setup is done! Quick shoutout to [Jekyll][jekyll] for enabling all this.
